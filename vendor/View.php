@@ -6,6 +6,7 @@ class View
     protected $page;
     protected $template;
     public function __construct($page, $template = null){
+        $this->page = $page;
         $this->template = $template ?? $this->template;
     }
     public function render(){
